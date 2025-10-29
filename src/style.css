@@ -11,24 +11,21 @@ body {
 
 .header {
   padding: 0 50px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
-  margin-top: 10px;
-  width: 40px;
+.header__logo {
   height: 40px;
-}
-
-a {
+  width: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-decoration: none;
-  color: black;
-  height: 60px;
 }
 
-ul {
+.navigation__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -37,20 +34,21 @@ ul {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
 }
 
-ul:not(:last-child) {
-  margin: 20px;
+.navigation__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .navigation__link {
+  text-decoration: none;
+  color: black;
   height: 60px;
   display: flex;
   align-items: center;
 }
 
-a:hover {
+.navigation__link:hover {
   color: var(--blue);
 }
 
@@ -64,7 +62,6 @@ a:hover {
   background-color: var(--blue);
   width: 37px;
   height: 4px;
-  display: flex;
   position: absolute;
   top: 56px;
 }
